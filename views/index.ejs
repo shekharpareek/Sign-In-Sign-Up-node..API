@@ -1,0 +1,35 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register your info.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-3">Register your info.</h1>
+        <form action="/views/user-profile.ejs" method="post" class="container mt-5 border border-light p-5">
+            <h2 class="mb-4 text-capitalize">login</h2>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" name="username" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <a class="btn btn-primary" href=" /user-profile" role="button">Login</a>
+        </form>
+        <div class="container mx-3">
+            <a class="btn btn-primary mx-3 " href="/login" role="button">Register</a>
+        </div>
+    </div>
+</body>
+
+</html>
